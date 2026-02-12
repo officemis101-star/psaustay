@@ -41,7 +41,7 @@
             <div class="card shadow-sm border-0">
                 <div class="card-header bg-gradient" style="background: linear-gradient(135deg, var(--psau-green) 0%, var(--psau-green-dark) 100%);">
                     <div class="d-flex justify-content-between align-items-center">
-                        <h5 class="mb-0 text-white">
+                        <h5 class="mb-0 text-black">
                             <i class="bi bi-list-ul me-2"></i>Active Maintenance Requests
                         </h5>
                     </div>
@@ -84,15 +84,15 @@
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <span class="text-muted">Pending Requests</span>
-                        <span class="badge bg-warning rounded-pill">3</span>
+                        <span class="badge bg-warning rounded-pill"><%= PendingCount %></span>
                     </div>
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <span class="text-muted">In Progress</span>
-                        <span class="badge bg-primary rounded-pill">5</span>
+                        <span class="badge bg-primary rounded-pill"><%= InProgressCount %></span>
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
-                        <span class="text-muted">Completed Today</span>
-                        <span class="badge bg-success rounded-pill">2</span>
+                        <span class="text-muted">Completed</span>
+                        <span class="badge bg-success rounded-pill"><%= CompletedTodayCount %></span>
                     </div>
                 </div>
             </div>

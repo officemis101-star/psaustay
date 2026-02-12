@@ -14,10 +14,17 @@ namespace PSAUStay.Admin
     {
         string cs = ConfigurationManager.ConnectionStrings["PSAUStayConnection"].ConnectionString;
 
+        public int PendingCount { get; set; }
+        public int InProgressCount { get; set; }
+        public int CompletedTodayCount { get; set; }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
+            {
                 LoadMaintenanceRequests();
+                LoadQuickStats();
+            }
         }
 
         void LoadMaintenanceRequests()
@@ -52,6 +59,29 @@ namespace PSAUStay.Admin
                     return "bg-danger";
                 default:
                     return "bg-secondary";
+            }
+        }
+
+        void LoadQuickStats()
+        {
+            using (SqlConnection con = new SqlConnection(cs))
+            {
+                // Get pending requests count
+                string pendingQuery = "SELECT COUNT(*) FROM MaintenanceRequests WHERE Status = 'Pending'";
+                SqlCommand pendingCmd = new SqlCommand(pendingQuery, con);
+                con.Open();
+                PendingCount = (int)pendingCmd.ExecuteScalar();
+
+                // Get in progress requests count
+                string inProgressQuery = "SELECT COUNT(*) FROM MaintenanceRequests WHERE Status IN ('In Progress', 'Inprogress')";
+                SqlCommand inProgressCmd = new SqlCommand(inProgressQuery, con);
+                InProgressCount = (int)inProgressCmd.ExecuteScalar();
+
+                // Get completed requests count
+                string completedTodayQuery = "SELECT COUNT(*) FROM MaintenanceRequests WHERE Status = 'Completed'";
+                SqlCommand completedTodayCmd = new SqlCommand(completedTodayQuery, con);
+                CompletedTodayCount = (int)completedTodayCmd.ExecuteScalar();
+                con.Close();
             }
         }
 

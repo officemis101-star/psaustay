@@ -1,18 +1,38 @@
 ﻿<%@ Page Title="Add Maintenance" Language="C#" MasterPageFile="~/AdminControl.master" AutoEventWireup="true" CodeBehind="AddMaintenanceRequest.aspx.cs" Inherits="PSAUStay.Admin.AddMaintenance" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="AdminMainContent" runat="server">
-<style>
-    .maintenance-container {
-        max-width: 900px;
-        margin: 2rem auto;
-        padding: 0 1rem;
-    }
-    
-    .maintenance-card {
-        background: #ffffff;
-        border-radius: 12px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
-        overflow: hidden;
-        border: 1px solid #e8f5e9;
+    <%-- Green Header --%>
+    <div class="card shadow-sm border-0 mb-4" style="background: linear-gradient(135deg, var(--psau-green) 0%, var(--psau-green-dark) 100%);">
+        <div class="card-body p-4">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h2 class="mb-1 fw-bold text-white">
+                        <i class="bi bi-plus-circle-fill me-2" style="color: var(--psau-gold);"></i>
+                        Add Maintenance Request
+                    </h2>
+                    <p class="mb-0 text-white-50">Create a new maintenance request for room repairs or issues</p>
+                </div>
+                <div class="col-auto">
+                    <a href="<%= ResolveUrl("~/Admin/Dashboard.aspx") %>" class="btn btn-light shadow-sm fw-bold">
+                        <i class="bi bi-arrow-left me-2"></i>Back to Dashboard
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .maintenance-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .maintenance-card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+            overflow: hidden;
+            border: 1px solid #e8f5e9;
     }
     
     .maintenance-header {

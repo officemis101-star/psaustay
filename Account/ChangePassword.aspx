@@ -1,23 +1,38 @@
 ﻿<%@ Page Title="Change Password" Language="C#" MasterPageFile="~/AdminControl.master" AutoEventWireup="true" CodeBehind="ChangePassword.aspx.cs" Inherits="PSAUStay.Account.ChangePassword" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="AdminMainContent" runat="server">
-    <div class="d-flex justify-content-between align-items-center mb-4">
-        <h3 class="mb-0">
-            <i class="bi bi-shield-lock-fill me-2" style="color: var(--psau-gold);"></i>
-            Change Password
-        </h3>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item">
-                    <a href="<%= ResolveUrl("~/Admin/Dashboard.aspx") %>" style="color: var(--psau-green); text-decoration: none;">Dashboard</a>
-                </li>
-                <li class="breadcrumb-item">
-                    <a href="#" style="color: var(--psau-green); text-decoration: none;">Security</a>
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">Change Password</li>
-            </ol>
-        </nav>
+    <%-- Green Header --%>
+    <div class="card shadow-sm border-0 mb-4" style="background: linear-gradient(135deg, var(--psau-green) 0%, var(--psau-green-dark) 100%);">
+        <div class="card-body p-4">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h2 class="mb-1 fw-bold text-white">
+                        <i class="bi bi-shield-lock-fill me-2" style="color: var(--psau-gold);"></i>
+                        Change Password
+                    </h2>
+                    <p class="mb-0 text-white-50">Update your account password for better security</p>
+                </div>
+                <div class="col-auto">
+                    <a href="<%= ResolveUrl("~/Admin/Dashboard.aspx") %>" class="btn btn-light shadow-sm fw-bold">
+                        <i class="bi bi-arrow-left me-2"></i>Back to Dashboard
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item">
+                <a href="<%= ResolveUrl("~/Admin/Dashboard.aspx") %>" style="color: var(--psau-green); text-decoration: none;">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#" style="color: var(--psau-green); text-decoration: none;">Security</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Change Password</li>
+        </ol>
+    </nav>
 
     <div class="row">
         <div class="col-lg-6 col-md-8">

@@ -1,13 +1,27 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminControl.master" AutoEventWireup="true" CodeBehind="ManageUsers.aspx.cs" Inherits="PSAUStay.Account.ManageUsers" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="AdminMainContent" runat="server">
-
-
-    <h2 class="mb-4">Manage Users</h2>
-
-    <!-- Add User Button -->
-    <asp:Button ID="btnAddUser" runat="server" Text="➕ Add User" CssClass="btn btn-success mb-3"
-        OnClick="btnAddUser_Click" />
+    <%-- Green Header --%>
+    <div class="card shadow-sm border-0 mb-4" style="background: linear-gradient(135deg, var(--psau-green) 0%, var(--psau-green-dark) 100%);">
+        <div class="card-body p-4">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h2 class="mb-1 fw-bold text-white">
+                        <i class="bi bi-people-fill me-2" style="color: var(--psau-gold);"></i>
+                        Manage Users
+                    </h2>
+                    <p class="mb-0 text-white-50">Create and manage user accounts and permissions</p>
+                </div>
+                <div class="col-auto">
+                    <a href="<%= ResolveUrl("~/Admin/Dashboard.aspx") %>" class="btn btn-light shadow-sm fw-bold me-2">
+                        <i class="bi bi-arrow-left me-2"></i>Back to Dashboard
+                    </a>
+                    <asp:Button ID="btnAddUser" runat="server" Text="➕ Add User" CssClass="btn btn-light shadow-sm fw-bold"
+                        OnClick="btnAddUser_Click" />
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Users Grid -->
     <asp:GridView ID="gvUsers" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered"

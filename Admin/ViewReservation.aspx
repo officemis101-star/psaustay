@@ -7,10 +7,23 @@
         
         <%-- View 1: List of All Bookings --%>
         <asp:Panel ID="pnlAllBookings" runat="server" Visible="false">
-            <div class="row mb-4">
-                <div class="col">
-                    <h2 class="fw-bold" style="color: #0b6623;">Reservation Management</h2>
-                    <p class="text-muted">View details or remove booking records.</p>
+            <%-- Green Header --%>
+            <div class="card shadow-sm border-0 mb-4" style="background: linear-gradient(135deg, var(--psau-green) 0%, var(--psau-green-dark) 100%);">
+                <div class="card-body p-4">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h2 class="mb-1 fw-bold text-white">
+                                <i class="bi bi-calendar-check-fill me-2" style="color: var(--psau-gold);"></i>
+                                Reservation Management
+                            </h2>
+                            <p class="mb-0 text-white-50">View details or remove booking records</p>
+                        </div>
+                        <div class="col-auto">
+                            <a href="<%= ResolveUrl("~/Admin/Dashboard.aspx") %>" class="btn btn-light shadow-sm fw-bold">
+                                <i class="bi bi-arrow-left me-2"></i>Back to Dashboard
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 

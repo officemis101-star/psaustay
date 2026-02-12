@@ -1,7 +1,20 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminControl.master" AutoEventWireup="true" CodeBehind="EditRoom.aspx.cs" Inherits="PSAUStay.Admin.EditRoom" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="AdminMainContent" runat="server">
-    <h2>Edit Room</h2>
+    <%-- Green Header --%>
+    <div class="card shadow-sm border-0 mb-4" style="background: linear-gradient(135deg, var(--psau-green) 0%, var(--psau-green-dark) 100%);">
+        <div class="card-body p-4">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h2 class="mb-1 fw-bold text-white">
+                        <i class="bi bi-pencil-fill me-2" style="color: var(--psau-gold);"></i>
+                        Edit Room
+                    </h2>
+                    <p class="mb-0 text-white-50">Update room category details and information</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <asp:Label ID="lblMessage" runat="server" CssClass="fw-bold mt-3 d-block"></asp:Label>
 

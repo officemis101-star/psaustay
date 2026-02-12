@@ -6,8 +6,26 @@
     <asp:Button ID="btnHiddenConfirm" runat="server" OnClick="btnConfirmAction_Click" Style="display:none;" />
 
     <div class="container-fluid py-4">
-        <h2 class="fw-bold" style="color: #157347;">Checkout Management</h2>
-        
+        <%-- Green Header --%>
+        <div class="card shadow-sm border-0 mb-4" style="background: linear-gradient(135deg, var(--psau-green) 0%, var(--psau-green-dark) 100%);">
+            <div class="card-body p-4">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h2 class="mb-1 fw-bold text-white">
+                            <i class="bi bi-box-arrow-right me-2" style="color: var(--psau-gold);"></i>
+                            Checkout Management
+                        </h2>
+                        <p class="mb-0 text-white-50">Manage guest checkouts and final billing</p>
+                    </div>
+                    <div class="col-auto">
+                        <a href="<%= ResolveUrl("~/Admin/Dashboard.aspx") %>" class="btn btn-light shadow-sm fw-bold">
+                            <i class="bi bi-arrow-left me-2"></i>Back to Dashboard
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <ul class="nav nav-tabs mb-4" id="checkoutTabs" role="tablist">
             <li class="nav-item">
                 <button class="nav-link active fw-bold text-success" id="active-tab" data-bs-toggle="tab" data-bs-target="#activeContent" type="button">Active Checkouts</button>

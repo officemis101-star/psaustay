@@ -1,9 +1,22 @@
 <%@ Page Title="Reset Counts" Language="C#" MasterPageFile="~/AdminControl.master" AutoEventWireup="true" CodeBehind="ResetCounts.aspx.cs" Inherits="PSAUStay.Admin.ResetCounts" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="AdminMainContent" runat="server">
+    <%-- Green Header --%>
+    <div class="card shadow-sm border-0 mb-4" style="background: linear-gradient(135deg, var(--psau-green) 0%, var(--psau-green-dark) 100%);">
+        <div class="card-body p-4">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h2 class="mb-1 fw-bold text-white">
+                        <i class="bi bi-arrow-clockwise me-2" style="color: var(--psau-gold);"></i>
+                        Reset Dashboard Counts
+                    </h2>
+                    <p class="mb-0 text-white-50">Reset all booking status counts and statistics</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container mt-4">
-        <h3 class="mb-4 text-danger"><i class="bi bi-arrow-clockwise me-2"></i>Reset Dashboard Counts</h3>
-        
         <div class="alert alert-warning">
             <strong>Warning:</strong> This will reset all booking status counts. This action cannot be undone.
         </div>

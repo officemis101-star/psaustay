@@ -1,13 +1,25 @@
 ﻿<%@ Page Title="Confirm Guest Details" Language="C#" MasterPageFile="~/AdminControl.master" AutoEventWireup="true" CodeBehind="ConfirmGuestDetails.aspx.cs" Inherits="PSAUStay.Admin.ConfirmGuestDetails" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="AdminMainContent" runat="server">
+    <%-- Green Header --%>
+    <div class="card shadow-sm border-0 mb-4" style="background: linear-gradient(135deg, var(--psau-green) 0%, var(--psau-green-dark) 100%);">
+        <div class="card-body p-4">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h2 class="mb-1 fw-bold text-white">
+                        <i class="bi bi-check-circle-fill me-2" style="color: var(--psau-gold);"></i>
+                        Confirm Guest Details
+                    </h2>
+                    <p class="mb-0 text-white-50">Review and confirm guest information before check-in</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="card shadow-lg border-0">
-                    <div class="card-header bg-success text-white">
-                        <h4 class="mb-0"><i class="fas fa-check-circle me-2"></i>Confirm Guest Details</h4>
-                    </div>
                     <div class="card-body p-4">
                         <asp:Label ID="lblError" runat="server" CssClass="alert alert-danger d-block mb-3" Visible="false"></asp:Label>
                         

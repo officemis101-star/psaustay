@@ -1,5 +1,25 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminControl.master" AutoEventWireup="true" CodeBehind="NotifyHousekeeping.aspx.cs" Inherits="PSAUStay.Admin.NotifyHousekeeping" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="AdminMainContent" runat="server">
+    <%-- Green Header --%>
+    <div class="card shadow-sm border-0 mb-4" style="background: linear-gradient(135deg, var(--psau-green) 0%, var(--psau-green-dark) 100%);">
+        <div class="card-body p-4">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h2 class="mb-1 fw-bold text-white">
+                        <i class="bi bi-bell-fill me-2" style="color: var(--psau-gold);"></i>
+                        Notify Housekeeping
+                    </h2>
+                    <p class="mb-0 text-white-50">Send cleaning and maintenance notifications to housekeeping staff</p>
+                </div>
+                <div class="col-auto">
+                    <a href="<%= ResolveUrl("~/Admin/Dashboard.aspx") %>" class="btn btn-light shadow-sm fw-bold">
+                        <i class="bi bi-arrow-left me-2"></i>Back to Dashboard
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <style>
         .modern-card {
             border: none;
@@ -121,24 +141,7 @@
         }
     </style>
 
-    <div class="page-header">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-md-8">
-                    <h2 class="mb-2">
-                        <i class="bi bi-bell-fill me-3"></i>Notify Housekeeping
-                    </h2>
-                    <p class="mb-0 opacity-75">Send notifications to housekeeping staff for room maintenance and cleaning tasks</p>
-                </div>
-                <div class="col-md-4 text-md-end">
-                    <div class="stats-card">
-                        <h4 class="mb-1" id="todayCount">0</h4>
-                        <small>Today's Notifications</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Main Content -->
 
     <!-- Quick Stats Section -->
     <div class="row mb-4">

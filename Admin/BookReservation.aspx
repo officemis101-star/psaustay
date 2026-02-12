@@ -4,18 +4,26 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <div class="container-fluid py-4">
-        <%-- Header --%>
-        <div class="row mb-4 align-items-center">
-            <div class="col">
-                <h2 class="fw-bold" style="color: #0b6623;">
-                    <i class="bi bi-calendar-event-fill me-2"></i>Book Reservation
-                </h2>
-                <p class="text-muted">View all upcoming bookings that have not started yet.</p>
-            </div>
-            <div class="col-auto">
-                <asp:LinkButton ID="btnRefresh" runat="server" CssClass="btn shadow-sm" Style="background-color: #ffc107; color: #157347; font-weight: bold;" OnClick="btnRefresh_Click">
-                    <i class="bi bi-arrow-clockwise"></i> Refresh
-                </asp:LinkButton>
+        <%-- Green Header --%>
+        <div class="card shadow-sm border-0 mb-4" style="background: linear-gradient(135deg, var(--psau-green) 0%, var(--psau-green-dark) 100%);">
+            <div class="card-body p-4">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h2 class="mb-1 fw-bold text-white">
+                            <i class="bi bi-calendar-check-fill me-2" style="color: var(--psau-gold);"></i>
+                            Book Reservation
+                        </h2>
+                        <p class="mb-0 text-white-50">View all upcoming bookings that have not started yet</p>
+                    </div>
+                    <div class="col-auto">
+                        <a href="<%= ResolveUrl("~/Admin/Dashboard.aspx") %>" class="btn btn-light shadow-sm fw-bold me-2">
+                            <i class="bi bi-arrow-left me-2"></i>Back to Dashboard
+                        </a>
+                        <asp:LinkButton ID="btnRefresh" runat="server" CssClass="btn btn-light shadow-sm fw-bold" OnClick="btnRefresh_Click">
+                            <i class="bi bi-arrow-clockwise me-2"></i> Refresh
+                        </asp:LinkButton>
+                    </div>
+                </div>
             </div>
         </div>
 

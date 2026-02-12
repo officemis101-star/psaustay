@@ -1,6 +1,20 @@
 ﻿<%@ Page Title="Add Room" Language="C#" MasterPageFile="~/AdminControl.master" AutoEventWireup="true" CodeBehind="AddRoom.aspx.cs" Inherits="PSAUStay.Admin.AddRoom" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="AdminMainContent" runat="server">
+    <%-- Green Header --%>
+    <div class="card shadow-sm border-0 mb-4" style="background: linear-gradient(135deg, var(--psau-green) 0%, var(--psau-green-dark) 100%);">
+        <div class="card-body p-4">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h2 class="mb-1 fw-bold text-white">
+                        <i class="bi bi-plus-circle-fill me-2" style="color: var(--psau-gold);"></i>
+                        Add New Room
+                    </h2>
+                    <p class="mb-0 text-white-50">Create a new room category for the accommodation system</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <style>
         :root {

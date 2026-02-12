@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PSAUStay.HouseKeeper {
-    
-    
-    public partial class HouseKeeperDashboard {
-        
+namespace PSAUStay.HouseKeeper
+{
+
+
+    public partial class HouseKeeperDashboard
+    {
+
         /// <summary>
         /// notificationBadge control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace PSAUStay.HouseKeeper {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl notificationBadge;
-        
+
         /// <summary>
         /// gvNotifications control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace PSAUStay.HouseKeeper {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gvNotifications;
-        
+
         /// <summary>
         /// historyBadge control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace PSAUStay.HouseKeeper {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl historyBadge;
-        
+
         /// <summary>
         /// gvHistory control.
         /// </summary>

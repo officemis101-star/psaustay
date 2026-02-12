@@ -1,8 +1,20 @@
 ﻿<%@ Page Title="Reservation Management" Language="C#" MasterPageFile="~/AdminControl.master" AutoEventWireup="true" CodeBehind="Reservations.aspx.cs" Inherits="PSAUStay.Admin.Reservations" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="AdminMainContent" runat="server">
-    <!-- Page Title -->
-    <h2 class="mb-4">Reservation Management</h2>
+    <%-- Green Header --%>
+    <div class="card shadow-sm border-0 mb-4" style="background: linear-gradient(135deg, var(--psau-green) 0%, var(--psau-green-dark) 100%);">
+        <div class="card-body p-4">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h2 class="mb-1 fw-bold text-white">
+                        <i class="bi bi-calendar-week-fill me-2" style="color: var(--psau-gold);"></i>
+                        Reservation Management
+                    </h2>
+                    <p class="mb-0 text-white-50">Manage and monitor all reservation bookings and status</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Filters Section -->
     <div class="filter-section mb-3">

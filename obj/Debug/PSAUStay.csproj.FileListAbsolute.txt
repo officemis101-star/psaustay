@@ -1,0 +1,14 @@
+D:\psaustay-feb11\psauStay\PSAUStay\bin\PSAUStay.dll.config
+D:\psaustay-feb11\psauStay\PSAUStay\bin\PSAUStay.dll
+D:\psaustay-feb11\psauStay\PSAUStay\bin\PSAUStay.pdb
+D:\psaustay-feb11\psauStay\PSAUStay\obj\Debug\PSAUStay.dll
+D:\psaustay-feb11\psauStay\PSAUStay\obj\Debug\PSAUStay.pdb
+D:\psaustay-feb11\psauStay\PSAUStay\obj\Debug\PSAUStay.csprojResolveAssemblyReference.cache
+C:\Users\mis_d\Desktop\projects\kv\psauStay\PSAUStay\bin\PSAUStay.dll.config
+C:\Users\mis_d\Desktop\projects\kv\psauStay\PSAUStay\bin\PSAUStay.dll
+C:\Users\mis_d\Desktop\projects\kv\psauStay\PSAUStay\bin\PSAUStay.pdb
+C:\Users\mis_d\Desktop\projects\kv\psauStay\PSAUStay\obj\Debug\PSAUStay.csproj.AssemblyReference.cache
+C:\Users\mis_d\Desktop\projects\kv\psauStay\PSAUStay\obj\Debug\PSAUStay.csproj.CoreCompileInputs.cache
+C:\Users\mis_d\Desktop\projects\kv\psauStay\PSAUStay\obj\Debug\PSAUStay.csproj.CopyComplete
+C:\Users\mis_d\Desktop\projects\kv\psauStay\PSAUStay\obj\Debug\PSAUStay.dll
+C:\Users\mis_d\Desktop\projects\kv\psauStay\PSAUStay\obj\Debug\PSAUStay.pdb
